@@ -1,0 +1,7 @@
+<view class="container">
+  <map id="myMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" bindtap="chooseLocation">
+    <cover-view class="marker" bindtap="chooseLocation">
+      <cover-image src="/path/to/marker.png" />
+    </cover-view>
+  </map>
+</view>

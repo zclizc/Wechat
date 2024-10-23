@@ -1,0 +1,7 @@
+<view class="container">
+  <text class="title">签到</text>
+  <text class="info">当前距离目标位置: {{distance ? distance.toFixed(2) : '获取中...'}} 米</text>
+  <button class="button" bindtap="chooseTargetLocation">选择目标位置</button>
+  <button class="button" bindtap="handleSignIn" disabled="{{isSignedIn}}">签到</button>
+  <text class="status" hidden="{{!isSignedIn}}">已签到</text>
+</view>

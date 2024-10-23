@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="form-item">
+    <text>用户名:</text>
+    <text>{{username}}</text>
+  </view>
+  <view class="form-item">
+    <text>邮箱:</text>
+    <input type="text" value="{{email}}" bindinput="handleInputEmail" placeholder="请输入邮箱" />
+  </view>
+  <view class="form-item">
+    <text>电话:</text>
+    <input type="text" value="{{phone}}" bindinput="handleInputPhone" placeholder="请输入电话" />
+  </view>
+  <button bindtap="updateUserInfo">更新信息</button>
+</view>

@@ -1,0 +1,12 @@
+<view class="container">
+  <text class="title">注册</text>
+
+  <input data-field="username" bindinput="handleInput" placeholder="用户名" />
+  <input data-field="password" bindinput="handleInput" placeholder="密码" type="password" />
+  <input data-field="confirmPassword" bindinput="handleInput" placeholder="确认密码" type="password" />
+
+  <button bindtap="handleRegister">注册</button>
+
+  <text>已有账号？</text>
+    <text bindtap="goToLogin" class="text-link">去登录</text>
+</view>

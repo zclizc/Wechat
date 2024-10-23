@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="question-list">
+    <block wx:for="{{questions}}" wx:key="index">
+      <view class="question-item" bindtap="selectQuestion" data-index="{{index}}">
+        <text>{{item.content}}</text> <!-- 假设题目内容在 content 字段 -->
+      </view>
+    </block>
+  </view>
+
+  <view class="current-question" wx:if="{{currentQuestion}}">
+    <text>当前题目: {{currentQuestion.content}}</text>
+    <button bindtap="addWrongQuestion">收藏错题</button>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="header">
+    <text class="title">欢迎来到学习平台</text>
+  </view>
+  
+  <view class="button-container">
+    <button bindtap="goToLogin" class="btn">登录</button>
+    <button bindtap="goToRegister" class="btn">注册</button>
+    <button bindtap="goToProfile" class="btn">个人信息</button>
+    <button bindtap="goToLearning" class="btn">学习页面</button>
+    <button bindtap="goToSignIn" class="btn">签到测距</button>
+  </view>
+
+  <view class="footer">
+    <text>© 2024 学习平台</text>
+  </view>
+</view>
